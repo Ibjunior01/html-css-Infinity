@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gradient-start: #6a11cb;
+    --gradient-end: #2575fc;
+    --text-color: #ffffff;
+    --bg-light: #f3f4f6;
+    --bg-dark:#1f2937;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: paleturquoise;
+    font-family: 'Comic Sans MS', Arial, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: var(--bg-dark);
+}
+
+header {
+    background-color: var(--bg-light);
+    color: var(--gradient-start);
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: var(--bg-dark);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: var(--gradient-start);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: var(--gradient-end);
+    margin-top: 20px;
+    animation: moveRight 2s infinite;
+}
+
+@keyframes moveRight {
+    0% {transform: translateX(0);}
+    50% {transform: translateX(200px);}
+    100% {transform: translateX(0);}
+}
+
+footer {
+    background-color: var(--bg-light);
+    color: var(--gradient-start);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 600px) { 
+    .transition-button { 
+        font-size: 1.4rem; 
+        padding: 8px 16px; 
+    } 
+    .transition-box { 
+        width: 150px; 
+        height: 75px; 
+    } 
+    .transition-box:hover { 
+        width: 200px; 
+        height: 100px; 
+    } 
+} 
+
+@media (min-width: 601px) and (max-width: 1024px) { 
+    .transition-button { 
+        font-size: 1.5rem; 
+        padding: 9px 18px; 
+    } 
+    .transition-box { 
+        width: 180px; 
+        height: 90px; 
+    } 
+    .transition-box:hover { 
+        width: 230px; 
+        height: 140px; 
+    } 
+} 
+
+@media (min-width: 1025px) { 
+    .transition-button { 
+        font-size: 1.6rem; 
+        padding: 10px 20px; 
+    } 
+    .transition-box { 
+        width: 200px; 
+        height: 100px; 
+    } 
+    .transition-box:hover { 
+        width: 250px; 
+        height: 150px; 
+    } 
+}

@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans';
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+}
+
+
+.header {
+    background-color: aliceblue;
+    color: brown;
+    text-align: center;
+    padding: 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+    padding: 20px;
+    color: brown;
+}
+
+.footer {
+    background-color: aliceblue;
+    color: brown;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+

@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Segoe UI';
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: darkkhaki;
+    color: blue;
+    text-align: center;
+    padding: 20px ;
+
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+.bio {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+.bio::first-letter {
+    font-size: 3em;
+    color: black;
+    font-weight: bold;
+}
+
+.bio::first-line {
+    color: #666;
+    font-style: italic;
+}
+
+h2 {
+    margin: 20px 0;
+}
+    

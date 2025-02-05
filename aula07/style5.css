@@ -1,0 +1,124 @@
+:root { 
+    --font-size-small: 1.4rem; 
+    --font-size-medium: 1.6rem; 
+    --font-size-large: 2rem; 
+    --spacing-small: 10px; 
+    --spacing-medium: 20px; 
+    --spacing-large: 30px; 
+    --background-color: #121212; 
+    --text-color: #E0E0E0; 
+    --highlight-color: #FFD700; 
+    --animated-box-color: #FF6347;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: var(--font-size-medium);
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--highlight-color);
+    color: var(--background-color);
+    padding: var(--spacing-medium);
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-medium);
+    text-align: center;
+
+    h2 {
+        font-size: var(--font-size-large);
+        margin-bottom: var(--spacing-medium);
+    }
+
+    p {
+        margin-top: var(--spacing-medium);
+    }
+
+    .animated-box {
+        width: 100px;
+        height: 100px;
+        background-color: var(--animated-box-color);
+        animation: moveRight 4s infinite;
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+        background-color: var(--animated-box-color);
+    }
+    25% {
+        transform: translateX(100px);
+        opacity: 0.75;
+        background-color: var(--highlight-color);
+    }
+    50% {
+        transform: translateX(200px);
+        opacity: 0.5;
+        background-color:#4caf50;
+    }
+    75% {
+        transform: translateX(100px);
+        opacity: 0.75;
+        background-color: #1e90ff;
+    }
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+        background-color: var(--animated-box-color);
+    }
+}
+
+footer {
+    background-color: var(--highlight-color);
+    color: var(--background-color);
+    padding: var(--spacing-medium);
+    text-align: center;
+}
+
+/* Responsividade */ 
+@media (max-width: 600px) {
+     :root { 
+        --font-size-medium: 1.2rem; 
+        --font-size-large: 1.6rem; 
+        --spacing-medium: 15px; 
+        --spacing-large: 20px; 
+    } 
+    main .animated-box { 
+        width: 80px; 
+        height: 80px; 
+    } 
+} 
+@media (min-width: 601px) and (max-width: 1024px) { 
+    :root { 
+        --font-size-medium: 1.4rem; 
+        --font-size-large: 1.8rem; 
+        -spacing-medium: 18px; 
+        --spacing-large: 25px; 
+    } 
+    main .animated-box { 
+        width: 90px; 
+        height: 90px; 
+    } 
+}
+

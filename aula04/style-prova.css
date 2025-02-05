@@ -1,0 +1,83 @@
+:root {
+    --primaria: #3B82F6;
+    --secundaria: #6366F1;
+    --acento: #FACC15;
+    --fundo-claro: #F3F4F6;
+    --texto-escuro: #1F2937;
+}
+
+/* Reset básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--fundo-claro);
+    color: var(--texto-escuro);
+}
+
+header {
+    background-color: var(--primaria);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    background-color: var(--secundaria);
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.footer-container div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.span{
+    font-weight: bold;
+    
+}
+
+.footer-container h3 {
+    color: var(--acento);
+    margin-bottom: 0.5rem;
+}
+
+.footer-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-container ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-container ul li a:hover {
+    color: var(--acento);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #ddd;
+}

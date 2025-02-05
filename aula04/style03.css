@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: blueviolet;
+}
+p{
+    border: 5px solid ;
+    border-radius: 8px;
+
+}
+img{
+    height: 300px;
+    width: 300px;
+}

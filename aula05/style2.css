@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteiner {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.absolute {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
